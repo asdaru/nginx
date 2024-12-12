@@ -25,6 +25,8 @@ cd nginx-$STABLE
 --with-stream \
 --with-mail=dynamic \
 --with-http_addition_module \
+--with-http_realip_module \
+--with-http_gzip_static_module \
 --add-module=/build/mod_zip
 make
 make install
